@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>japhet kalume : portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css-icon/all.css" />
+    <link rel="stylesheet" href="css-icon/fontawesome.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="#" class="logo">japhet-kalume.</a>
+        <ul class="menu">
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="btn-nav">
+          <button class="get-cv">download-cv</button>
+          <button class="icon-menu"></button>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="text-hero">
+          <h1>JAPHET KALUME.</h1>
+          <h2>FULL-STACK DEVELOPER</h2>
+          <p>
+            Je construis des applications web solides, intuitives et
+            <br />prêtes à évoluer. Une approche complète : développement, UX et
+            design produit.
+          </p>
+          <div class="btn-hero-box">
+            <a href="#projects" class="btn-hero">view-projects</a>
+          </div>
+        </div>
+        <div class="img-hero">
+          <img src="./asset/image/jaf.png" alt="japhet pictures" />
+        </div>
+      </div>
+    </header>
+    <div class="degress">
+      <p class="chart">3+ <span>Years of experience</span></p>
+      <p class="chart">20+ <span>Project competed</span></p>
+      <p class="chart">15+ <span>Satisfied clients</span></p>
+    </div>
+    <!-- skills -->
+    <div class="skills" id="skills">
+      <h2>Skills</h2>
+
+      <div class="controls">
+        <button class="control active" data-tab="expertise">
+          <i class="fas fa-briefcase"></i> Expertise
+        </button>
+        <button class="control" data-tab="software">
+          <i class="fas fa-desktop"></i> Software
+        </button>
+        <button class="control" data-tab="language">
+          <i class="fas fa-code"></i> Language
+        </button>
+      </div>
+
+      <div class="tabs">
+        <div class="tab-section expertise active">
+          <span class="card">User Experience</span>
+          <span class="card">User Interface</span>
+          <span class="card">Art Direction</span>
+          <span class="card">Motion Design</span>
+          <span class="card">Branding</span>
+          <span class="card">Web Design</span>
+          <span class="card">Project Management</span>
+        </div>
+
+        <div class="tab-section software">
+          <span class="card">Figma</span>
+          <span class="card">VS Code</span>
+          <span class="card">Git & GitHub</span>
+          <span class="card">Notion</span>
+        </div>
+
+        <div class="tab-section language">
+          <span class="card">JavaScript</span>
+          <span class="card">Python</span>
+          <span class="card">HTML</span>
+          <span class="card">CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="brands-section">
+      <div class="brands-header">
+        <h2>Brands</h2>
+        <p>I had the privilege of working with</p>
+      </div>
+
+      <div class="slider-container">
+        <div class="slider-track" id="slider-track">
+          <div class="brand-item"><i class="fab fa-google"></i> Google</div>
+          <div class="brand-item"><i class="fab fa-youtube"></i> YouTube</div>
+          <div class="brand-item"><i class="fab fa-dribbble"></i> Dribbble</div>
+          <div class="brand-item"><i class="fab fa-facebook"></i> Facebook</div>
+          <div class="brand-item">
+            <i class="fas fa-check-circle"></i> 123done
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="projects-header">
+        <h2>Projects</h2>
+        <div class="tabs">
+          <span class="tab active"
+            ><i class="fas fa-bookmark"></i> Featured</span
+          >
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img
+              src="ui-kit-preview.jpg"
+              alt="Universal UI Kit"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3><i class="fas fa-folder"></i> Universal UI Kit (Web)</h3>
+            <p>The Most Universal UI Kit for Figma</p>
+            <div class="tags-container">
+              <span class="tag">UX Design</span>
+              <span class="tag">UI Design</span>
+              <span class="tag">Motion design</span>
+              <span class="tag">Art Direction</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-container">
+            <img
+              src="data-viz-preview.jpg"
+              alt="Data Visualization"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3><i class="fas fa-folder"></i> Universal Data Visualization</h3>
+            <p>Charts and infographics constructor</p>
+            <div class="tags-container">
+              <span class="tag">Web Design</span>
+              <span class="tag">Branding</span>
+              <span class="tag">Motion design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="icons-preview.jpg" alt="Icon Set" class="project-img" />
+          </div>
+          <div class="project-info">
+            <h3><i class="fas fa-folder"></i> Universal Icon Set</h3>
+            <p>1986 high-quality vector icons</p>
+            <div class="tags-container">
+              <span class="tag">UI Design</span>
+              <span class="tag">Motion design</span>
+              <span class="tag">Web Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-container">
+            <img
+              src="mgmt-preview.jpg"
+              alt="Project Management"
+              class="project-img"
+            />
+          </div>
+          <div class="project-info">
+            <h3><i class="fas fa-folder"></i> Universal Project Management</h3>
+            <p>Take control of your projects</p>
+            <div class="tags-container">
+              <span class="tag">UX Design</span>
+              <span class="tag">UI Design</span>
+              <span class="tag">Product Design</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="add-project-btn"><i class="fas fa-plus"></i> New</button>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>San Francisco, United States</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-globe"></i>
+          <span>www.123d.one</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>+1 231-231-2312</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>hello@123d.one</span>
+        </div>
+      </div>
+
+      <hr class="contact-divider" />
+
+      <div class="info-blocks">
+        <div class="info-card">
+          <div class="info-header">
+            <i class="fas fa-info-circle"></i>
+            <h3>CONTACT AND SUPPORT</h3>
+          </div>
+          <p>Optimize your design process &rarr; <a href="#">123d.one</a></p>
+          <p>
+            Feel free to send us your feedback about the product at
+            <a href="mailto:support@123d.one">support@123d.one</a>
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-header">
+            <i class="fas fa-globe"></i>
+            <h3>FOLLOW</h3>
+          </div>
+          <p class="social-links">
+            <a href="#">Twitter</a> | <a href="#">Instagram</a> |
+            <a href="#">Dribbble</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

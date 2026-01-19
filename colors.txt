@@ -1,0 +1,8 @@
+
+bg-colors: #191919;
+card-colors-mini : #262626;
+card-colors : #262626
+text-colors: #D7D7D7;
+bg-contact: #252525;
+icon-colors: #696B7A;
+bg-card-photo: #A9A8A3;
