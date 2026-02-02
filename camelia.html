@@ -107,7 +107,9 @@
       }
 
       .envelope-container.open {
-        transform: translateY(180px); /* Moves down to show card */
+        transform: translateY(
+          140px
+        ); /* Réduit pour mieux coordonner avec la carte */
         cursor: default;
       }
 
@@ -207,11 +209,12 @@
       .card {
         position: absolute;
         bottom: 0px;
-        left: 10px;
-        width: 300px;
+        left: 50%;
+        width: 280px;
         /* Adaptive height based on content */
-        min-height: 420px;
-        padding: 20px;
+        min-height: 350px;
+        max-height: 80vh; /* Ne dépasse pas 80% de la hauteur de la vue */
+        padding: 18px;
 
         /* Parchment Texture */
         background-color: var(--paper-base);
@@ -222,7 +225,7 @@
         border-radius: 2px;
 
         /* Initial State */
-        transform: translateY(0) scale(0.9);
+        transform: translateX(-50%) translateY(0) scale(0.9);
         z-index: 5; /* Inside envelope */
         transition: transform 1s var(--ease-out-back) 0.5s;
 
@@ -245,8 +248,9 @@
       }
 
       .envelope-container.open .card {
-        transform: translateY(-280px) scale(1.05); /* Comes out and grows */
+        transform: translateX(-50%) translateY(-200px) scale(1); /* Réduit le déplacement et le scale */
         z-index: 30; /* On top */
+        overflow: hidden; /* Évite le débordement */
       }
 
       /* 
@@ -265,13 +269,13 @@
       }
 
       .meme-img {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         background: #eee;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 60px;
+        font-size: 50px;
         overflow: hidden;
         background-size: cover;
         background-position: center;
@@ -281,16 +285,16 @@
       h1 {
         font-family: var(--font-script);
         color: var(--accent-red);
-        margin: 5px 0 10px 0;
-        font-size: 2.8rem;
+        margin: 3px 0 8px 0;
+        font-size: 2.4rem;
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
       }
 
       p.message {
         color: var(--text-ink);
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.4;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         font-style: italic;
       }
 
@@ -302,7 +306,7 @@
         width: 100%;
         justify-content: space-around;
         position: relative; /* For absolute positioning of running button */
-        height: 60px; /* reserve space */
+        height: 50px; /* reserve space */
         align-items: center;
       }
 
@@ -400,7 +404,7 @@
       }
 
       /* Mobile specific adjustments to ensure yes button can grow huge */
-      @media (max-width: 400px) {
+      @media (max-width: 480px) {
         .card {
           width: 90%;
         }
